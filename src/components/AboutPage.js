@@ -110,8 +110,8 @@ const AboutPage = () => {
           <Main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}>
-            I'm a front-end developer located in India. I love to create simple
-            yet beautiful websites with great user experience.
+            I'm a full stack developer located in Denver, CO. I love to create simple
+            yet beautiful websites with great user experience. With a background in art I am proficient in creating everything from scratch. 
             <br />
             <br />
             I'm interested in the whole frontend stack Like trying new things

@@ -10,7 +10,6 @@ import Loading from "./subComponents/Loading";
 const Main = lazy(() => import("./components/Main"));
 const AboutPage = lazy(() => import("./components/AboutPage"));
 const MySkillsPage = lazy(() => import("./components/MySkillsPage"));
-const BlogPage = lazy(() => import("./components/BlogPage"));
 const WorkPage = lazy(() => import("./components/WorkPage"));
 
 
@@ -30,8 +29,6 @@ function App() {
               <Route exact path="/" component={Main} />
 
               <Route exact path="/about" component={AboutPage} />
-
-              <Route exact path="/blog" component={BlogPage} />
 
               <Route exact path="/work" component={WorkPage} />
 

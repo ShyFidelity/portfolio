@@ -100,19 +100,7 @@ const Contact = styled(NavLink)`
   text-decoration: none;
   z-index: 1;
 `;
-const BLOG = styled(NavLink)`
-  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
-  position: absolute;
-  top: 50%;
-  right: calc(1rem + 2vw);
-  transform: rotate(90deg) translate(-50%, -50%);
-  z-index: 1;
 
-  text-decoration: none;
-  @media only screen and (max-width: 50em) {
-    text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
-  }
-`;
 const WORK = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
@@ -273,41 +261,8 @@ const Main = () => {
             </Contact>
           )}
 
-          {mq ? (
-            <BLOG click={+click} onClick={() => setpath("blog")} to="/blog">
-              <motion.h2
-                initial={{
-                  y: -200,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
-                }}
-                animate={{
-                  y: 0,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
-                }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                Blog
-              </motion.h2>
-            </BLOG>
-          ) : (
-            <BLOG click={+false} onClick={() => setpath("blog")} to="/blog">
-              <motion.h2
-                initial={{
-                  y: -200,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
-                }}
-                animate={{
-                  y: 0,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
-                }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                Blog
-              </motion.h2>
-            </BLOG>
-          )}
+        
+      
 
           <WORK click={+click} to="/work">
             <motion.h2
