@@ -4,6 +4,7 @@ import { lazy, Suspense, useState } from "react";
 import { motion } from "framer-motion";
 
 //Components
+
 import { YinYang } from "./AllSvgs";
 import Intro from "./Intro";
 import Loading from "../subComponents/Loading";
@@ -221,7 +222,7 @@ const Main = () => {
             <Contact
               click={+click}
               target="_blank"
-              to={{ pathname: "mailto:codebucks27@gmail.com" }}
+              to={{ pathname: "shyfidelity100@gmail.com" }}
             >
               <motion.h3
                 initial={{
@@ -242,7 +243,7 @@ const Main = () => {
             <Contact
               click={+false}
               target="_blank"
-              to={{ pathname: "mailto:codebucks27@gmail.com" }}
+              to={{ pathname: "mailto:shyfidelity100@gmail.com" }}
             >
               <motion.h3
                 initial={{

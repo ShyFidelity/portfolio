@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 
 import { DarkTheme, mediaQueries } from './Themes'
-import astronaut from "../assets/Images/spaceman.png";
+import saturn from "../assets/Images/saturn.png";
 import Loading from '../subComponents/Loading';
 //Components
 const SocialIcons = lazy(() => import('../subComponents/SocialIcons'))
@@ -105,7 +105,7 @@ const AboutPage = () => {
               top: '10%',
               transition: { duration: 2, delay: 0.5 },
             }}>
-              <img src={astronaut}  alt="spaceman" />
+              <img src={saturn}  alt="spaceman" />
           </SpaceMan>
           <Main
             initial={{ opacity: 0 }}
