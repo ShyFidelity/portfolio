@@ -14,8 +14,8 @@ export const Work = [
         description:"A mental health app where a user can earn badges",
         tags:["react","sass"],
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
+        demo:'https://ouroboros-ml-jf-ni.herokuapp.com/',
+        github:'https://github.com/ShyFidelity/Ouroboros'
         
     },
     {
@@ -24,8 +24,8 @@ export const Work = [
         description:"A live weather app that allows you to search by city",
         tags:["react","api","sass"],
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/devto-clone"
+        demo:"https://shyfidelity.github.io/whats-the-weather/",
+        github:'https://github.com/ShyFidelity/whats-the-weather'
     }
     
   
