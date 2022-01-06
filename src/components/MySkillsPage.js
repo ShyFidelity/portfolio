@@ -10,9 +10,6 @@ import Loading from "../subComponents/Loading";
 const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
 const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 const LogoComponent = lazy(() => import("../subComponents/LogoComponent"));
-const ParticlesComponent = lazy(() =>
-  import("../subComponents/ParticlesComponent")
-);
 const BigTitle = lazy(() => import("../subComponents/BigTitle"));
 
 const Box = styled(motion.div)`
@@ -160,7 +157,7 @@ const MySkillsPage = () => {
           <LogoComponent theme="light" />
           <PowerButton />
           <SocialIcons theme="light" />
-          <ParticlesComponent theme="light" />
+          
 
           <Main>
             <Title>
