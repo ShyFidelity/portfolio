@@ -97,11 +97,11 @@ const SubBox = styled.div`
   display: flex;
   .pic {
     position: absolute;
-    bottom: 0;
+    padding: 10px;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 450px;
   }
   ${mediaQueries(50)`
       width: 100%;
@@ -119,6 +119,7 @@ const SubBox = styled.div`
       .pic {
     
     width: 80%;
+
     
   }
 
@@ -205,7 +206,7 @@ const Intro = () => {
         <Text>
           <h1>Hi,</h1>
 
-          <h3>I'm CodeBucks.</h3>
+          <h3>I'm Jillian.</h3>
 
           <h6>I design and Code simple yet beautiful websites.</h6>
         </Text>
