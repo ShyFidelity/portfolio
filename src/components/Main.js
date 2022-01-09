@@ -114,6 +114,19 @@ const WORK = styled(NavLink)`
     text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
   }
 `;
+
+const ARTDESIGN = styled(NavLink)`
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  position: absolute;
+  top: 50%;
+  right: calc(1rem + 2vw);
+  transform: translate(-50%, -50%) rotate(-90deg);
+  z-index: 1;
+  text-decoration: none;
+  @media only screen and (max-width: 50em) {
+    text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+  }
+`;
 const BottomBar = styled.div`
   position: absolute;
   bottom: 1rem;
@@ -324,6 +337,24 @@ const Main = () => {
               </motion.h2>
             </SKILLS>
           </BottomBar>
+
+          <ARTDESIGN click={+click} to="/artdesign">
+            <motion.h2
+              onClick={() => setpath("artdesign")}
+              initial={{
+                y: -200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Art + Design 
+            </motion.h2>
+          </ARTDESIGN>
         </Container>
 
         {click ? <Intro click={click} /> : null}

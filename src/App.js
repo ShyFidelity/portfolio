@@ -11,7 +11,7 @@ const Main = lazy(() => import("./components/Main"));
 const AboutPage = lazy(() => import("./components/AboutPage"));
 const MySkillsPage = lazy(() => import("./components/MySkillsPage"));
 const WorkPage = lazy(() => import("./components/WorkPage"));
-
+const ArtDesign = lazy(() => import("./components/ArtDesign"));
 
 function App() {
   const location = useLocation();
@@ -33,6 +33,8 @@ function App() {
               <Route exact path="/work" component={WorkPage} />
 
               <Route exact path="/skills" component={MySkillsPage} />
+
+              <Route exact path="/artdesign" component={ArtDesign} />
             </Switch>
           </AnimatePresence>
         </Suspense>
