@@ -18,11 +18,13 @@
     "tsparticles": "^1.30.4",
     "web-vitals": "^1.1.2"
   },
+  "homepage": "https://shyfidelity.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

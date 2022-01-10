@@ -101,7 +101,7 @@ const SubBox = styled.div`
     left: 50%;
     transform: translate(-50%, 0%);
     width: auto;
-    height: 450px;
+    height: 420px;
   }
   ${mediaQueries(50)`
       width: 100%;
