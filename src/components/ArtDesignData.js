@@ -1,5 +1,5 @@
 import Rattlesnake from '../assets/Images/rattlesnake.png'
-
+import Saturn from '../assets/Images/saturn.png'
 
 
 export const ArtDesignData = [
@@ -20,7 +20,7 @@ export const ArtDesignData = [
     {
         id:3,
         name:"Friends of Toto",
-        img:"../../assets/Images/saturn.png",
+        img: Saturn
         
     },
 ]

@@ -7,7 +7,6 @@ import { DarkTheme, mediaQueries } from './Themes'
 
 import Loading from '../subComponents/Loading';
 
-import Img from '../assets/Images/saturn.png'
 //Components
 const SocialIcons = lazy(() => import('../subComponents/SocialIcons'))
 const PowerButton = lazy(() => import('../subComponents/PowerButton'))
@@ -90,7 +89,7 @@ const ArtDesignPage = () => {
               <img src={d.img} />
             ))}
 
-            <img src = {Img} /> 
+         
     
           </Main>
    
