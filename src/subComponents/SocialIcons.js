@@ -55,7 +55,7 @@ const SocialIcons = (props) => {
         <NavLink
           style={{ color: "inherit" }}
           target="_blank"
-          to={{ pathname: "https://github.com/codebucks27" }}
+          to={{ pathname: "https://github.com/shyfidelity" }}
         >
           <Github
             width={25}
@@ -74,7 +74,7 @@ const SocialIcons = (props) => {
         <NavLink
           style={{ color: "inherit" }}
           target="_blank"
-          to={{ pathname: "https://twitter.com/code_bucks" }}
+          to={{ pathname: "https://twitter.com/jilliankayworks" }}
         >
           <Twitter
             width={25}
@@ -93,7 +93,7 @@ const SocialIcons = (props) => {
         <NavLink
           style={{ color: "inherit" }}
           target="_blank"
-          to={{ pathname: "https://www.facebook.com/codebucks27" }}
+          to={{ pathname: "https://www.instagram.com/fitzisrich/" }}
         >
           <Facebook
             width={25}
@@ -104,28 +104,7 @@ const SocialIcons = (props) => {
           />
         </NavLink>
       </motion.div>
-      <motion.div
-        initial={{ transform: "scale(0)" }}
-        animate={{ scale: [0, 1, 1.5, 1] }}
-        transition={{ type: "spring", duration: 1, delay: 1.6 }}
-      >
-        <NavLink
-          style={{ color: "inherit" }}
-          target="_blank"
-          to={{
-            pathname:
-              "https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA",
-          }}
-        >
-          <YouTube
-            width={25}
-            height={25}
-            fill={
-              props.theme === "dark" ? `${DarkTheme.text}` : `${DarkTheme.body}`
-            }
-          />
-        </NavLink>
-      </motion.div>
+     
 
       <Line
         initial={{ height: 0 }}
