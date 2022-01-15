@@ -1,4 +1,4 @@
-import { Github, Twitter, Facebook, YouTube } from "../components/AllSvgs";
+import { Github, Twitter, Instagram } from "../components/AllSvgs";
 
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -95,9 +95,9 @@ const SocialIcons = (props) => {
           target="_blank"
           to={{ pathname: "https://www.instagram.com/fitzisrich/" }}
         >
-          <Facebook
-            width={25}
-            height={25}
+          <Instagram
+            width={35}
+            height={35}
             fill={
               props.theme === "dark" ? `${DarkTheme.text}` : `${DarkTheme.body}`
             }
