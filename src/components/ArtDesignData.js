@@ -1,5 +1,6 @@
 import Rattlesnake from '../assets/Images/rattlesnake.png'
 import Saturn from '../assets/Images/saturn.png'
+import SnakeFlower from '../assets/Images/snakeflower.png'
 
 
 export const ArtDesignData = [
@@ -13,7 +14,7 @@ export const ArtDesignData = [
     {
         id:2,
         name:"Friends of Toto",
-        img:"../../assets/Images/ouro.png",
+        img: SnakeFlower,
         
     },
 

@@ -175,9 +175,6 @@ const DarkDiv = styled.div`
   `};
 `;
 
-/*
-Music by <a href="/users/wataboi-12344345/?tab=audio&amp;utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=audio&amp;utm_content=1167">Wataboi</a> from <a href="https://pixabay.com/music/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=1167">Pixabay</a>
-*/
 
 const Main = () => {
   const [click, setClick] = useState(false);

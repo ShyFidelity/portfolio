@@ -9,7 +9,7 @@ const Power = styled.button`
   left: 50%;
   transform: translate(-50%, 0);
 
-  background-color: #fcf6f4;
+  background-color: ea9ab2;
   padding: 0.3rem;
   border-radius: 50%;
   border: 1px solid black;
@@ -23,7 +23,7 @@ const Power = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(0, 255, 0, 0.4);
+    background: radial-gradient(circle, rgba(196,70,22,1) 9%, rgba(242,62,154,1) 25%, rgba(247,203,73,1) 64%, rgba(0,212,255,1) 100%);
     box-shadow: 0 0 8px 6px rgba(0, 255, 0, 0.2);
   }
 
