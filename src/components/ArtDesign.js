@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { lazy, Suspense } from 'react'
+import { useEffect, useRef, lazy, Suspense } from "react";
 import styled, { keyframes, ThemeProvider } from 'styled-components'
-
+import { YinYang } from "./AllSvgs";
 import { ArtDesignData } from "./ArtDesignData";
 import { DarkTheme, mediaQueries } from './Themes'
 
@@ -37,8 +37,7 @@ const Main = styled(motion.ul)`
   left: calc(10rem + 15vw);
 
   height: 40vh;
-  /* height:200vh; */
-  //border:1px solid white;
+  margin: 2rem;
 
   display: flex;
 
@@ -68,9 +67,68 @@ const Main = styled(motion.ul)`
   `};
 `;
 
+const Rotate = styled.span`
+  display: block;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 80px;
+  height: 80px;
+
+  z-index: 1;
+  ${mediaQueries(40)`
+     width:60px;
+         height:60px;   
+       svg{
+         width:60px;
+         height:60px;
+       }
+
+  `};
+  ${mediaQueries(25)`
+        width:50px;
+         height:50px;
+        svg{
+         width:50px;
+         height:50px;
+       }
+
+  `};
+`;
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+
+    transition: {
+      staggerChildren: 0.5,
+      duration: 0.5,
+    },
+  },
+};
 
 
 const ArtDesignPage = () => {
+  const ref = useRef(null);
+
+  const yinyang = useRef(null);
+
+  useEffect(() => {
+    let element = ref.current;
+
+    const rotate = () => {
+      element.style.transform = `translateX(${-window.pageYOffset}px)`;
+
+      return (yinyang.current.style.transform =
+        "rotate(" + -window.pageYOffset + "deg)");
+    };
+
+    window.addEventListener("scroll", rotate);
+    return () => {
+      window.removeEventListener("scroll", rotate);
+    };
+  }, []);
   return (
     <ThemeProvider theme={DarkTheme}>
       <Suspense fallback={<Loading/>}>
@@ -84,20 +142,23 @@ const ArtDesignPage = () => {
           <SocialIcons theme='dark' />
           <ParticlesComponent theme='dark' />
 
-          <Main >
-            {ArtDesignData.map((d)=> (
-              <img src={d.img} />
+          <Main ref={ref} variants={container} initial="hidden" animate="show">
+            {ArtDesignData.map((d) => (
+                        <img src={d.img} />
             ))}
-
+         
          
     
           </Main>
+          <Rotate ref={yinyang}>
+            <YinYang width={80} height={80} fill={DarkTheme.text} />
+          </Rotate>
    
           <BigTitle text='Art + Design' top='10%' left='5%' />
         </Box>
       </Suspense>
     </ThemeProvider>
-  )
-}
+  );
+};
 
 export default ArtDesignPage
