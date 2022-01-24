@@ -1,5 +1,14 @@
 export const Work = [
     {
+        id:0,
+        name:"Ivy Nails",
+        description:"Freelance react app made for local salon",
+        tags:["react","freelance","React Bootstrap"],
+        
+        demo:"https://shyfidelity.github.io/ivy/",
+        github:"https://github.com/ShyFidelity/ivy"
+    },
+    {
         id:1,
         name:"Friends of Toto",
         description:"A social media act for pets because people talk to much! Uses a full MERN stack",
